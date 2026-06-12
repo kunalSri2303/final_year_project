@@ -14,7 +14,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# this is cahage
+
 
 @app.on_event("startup")
 async def startup_event():
