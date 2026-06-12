@@ -5,6 +5,7 @@ from datetime import datetime
 from config import settings
 import json
 
+#sqlalchemy is used in previous backend for database connectivity.
 engine = create_engine(
     settings.DATABASE_URL, connect_args={"check_same_thread": False}
 )
