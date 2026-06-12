@@ -13,6 +13,8 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
+# so we want to check all database tables
+
 class InteractionHistory(Base):
     __tablename__ = "interaction_history"
 
